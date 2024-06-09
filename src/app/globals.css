@@ -7456,3 +7456,11 @@ div.tags.fill-color a.ctag-tech,
 :root {
   --ghost-accent-color: #6a4ee9;
 }
+
+#header {
+  transition: all 0.3s ease;
+}
+
+
+
+

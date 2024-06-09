@@ -1,6 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 
 function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header: any = document.getElementById("header");
+      if (window.scrollY > 1) {
+        header.setAttribute("data-stuck", "true");
+      } else {
+        header.removeAttribute("data-stuck");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
       <img
@@ -89,8 +105,8 @@ function Header() {
       </nav>
       <div className="menu-overlay"></div>
       <div className="wrapper">
-      {/* data-stuck */}
-        <header id="header" className="minimalist enable-sticky" >
+        {/* data-stuck */}
+        <header id="header" className="minimalist enable-sticky">
           {/* start: .menu-wrapper */}
           <div className="menu-wrapper">
             <div className="grid-container">

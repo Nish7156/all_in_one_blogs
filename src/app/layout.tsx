@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +43,11 @@ export default function RootLayout({
       <script defer src="../assets/js/cards.min.js"></script>
 
       </head>
-      <body className={"home-template"}>{children}</body>
+      <body className={"home-template"}>
+        <Header/>
+        {children}
+        <Footer/>
+        </body>
       <script defer src="../assets/dist/scripts.min.js"></script>
       <script defer src="../assets/dist/prism-plugins.min.js"></script>
       <script
