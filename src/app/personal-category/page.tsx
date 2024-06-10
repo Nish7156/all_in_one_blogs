@@ -10,7 +10,7 @@ function PersonalCategory() {
         <div className="category-image ctag-inspiration">
           <img
             src="/zento-personal/content/images/size/w300h300/2024/02/surfer-on-a-pink-background-in-the-style-of-minimalist-sets-vector-chrome-plated-subtle-color-variations-kinuko-y-craft-dan-matutina-realistic-forms-everyday-life-65c038a134d5d-4.webp"
-            fetchpriority="high"
+            
             decoding="async"
           />
         </div>
@@ -262,7 +262,7 @@ function PersonalCategory() {
                   <img
                     className="fullimage cover"
                     loading="eager"
-                    fetchpriority="high"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                     alt="Image of: Far far away, behind the word mountains"
@@ -348,7 +348,7 @@ function PersonalCategory() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -372,7 +372,7 @@ function PersonalCategory() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/Canoe--in-the-style-of-psychedelic-manga--rococo-pastel-hues--geometric-shapes---patterns--anime-aesthetic--ornate-embroidery--digital-print--kawaii-aesthetic.webp"
                     alt="Image of: Selling memberships with recurring revenue"
@@ -476,7 +476,7 @@ function PersonalCategory() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -500,7 +500,7 @@ function PersonalCategory() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/056df949-81d4-4be3-82ac-340767d98fb9.webp"
                     alt="Image of: How to grow your business around an audience"
@@ -576,7 +576,7 @@ function PersonalCategory() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/man-on-a-pink-background-in-the-style-of-minimalist-sets-vector-chrome-plated-subtle-color-variations-kinuko-y-craft-dan-matutina-realistic-forms-everyday-life-65c0389fd3f2f-2.webp"
                         alt="Image of: James Brawson"
@@ -600,7 +600,7 @@ function PersonalCategory() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/eaa6617d-6c7b-42a7-826e-d04d3242ff2a.webp"
                     alt="Image of: Writing and managing content in Ghost"
@@ -668,7 +668,7 @@ function PersonalCategory() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -692,7 +692,7 @@ function PersonalCategory() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/5a5e23a7-b45c-43b5-a55f-dc780f09a550.webp"
                     alt="Image of: Apps and scripts for your Ghost website"
@@ -758,7 +758,7 @@ function PersonalCategory() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/a-flock-in-the-style-of-vibrant-illustrations-florianne-becker-light-violet-and-orange-deconstructed-tailoring-fauvismcore-minimal-65c0389ba2024-1.webp"
                         alt="Image of: Brenda Hitchell"

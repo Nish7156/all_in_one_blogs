@@ -254,7 +254,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="eager"
-                          fetchpriority="high"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                           alt="Image of: Far far away, behind the word mountains"
@@ -341,7 +341,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -385,7 +385,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          fetchpriority="low"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/af4c0655-3360-41c5-997f-54b03ad540c9.webp"
                           alt="Image of: Building your audience with subscriber signups"
@@ -472,7 +472,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -496,7 +496,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          fetchpriority="low"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/fae9a49c-2b52-4e0e-93fe-e071feb02042-3.webp"
                           alt="Image of: Customizing your brand and design settings"
@@ -575,7 +575,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/a-woman-in-the-style-of-vibrant-illustrations-florianne-becker-light-violet-and-orange-deconstructed-tailoring-fauvismcore-minimal-65c0389d7f54e-2.webp"
                               alt="Image of: Mary Buzard"
@@ -599,7 +599,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          fetchpriority="low"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/Canoe--in-the-style-of-psychedelic-manga--rococo-pastel-hues--geometric-shapes---patterns--anime-aesthetic--ornate-embroidery--digital-print--kawaii-aesthetic.webp"
                           alt="Image of: Selling memberships with recurring revenue"
@@ -703,7 +703,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -727,7 +727,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          fetchpriority="low"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/eaa6617d-6c7b-42a7-826e-d04d3242ff2a-1.webp"
                           alt="Image of: What you need to know about Ghost Editor"
@@ -807,7 +807,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/a-woman-in-the-style-of-vibrant-illustrations-florianne-becker-light-violet-and-orange-deconstructed-tailoring-fauvismcore-minimal-65c0389d7f54e-2.webp"
                               alt="Image of: Mary Buzard"
@@ -831,7 +831,7 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          fetchpriority="low"
+                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/Candlelight-on-a-pink-background--in-the-style-of-minimalist-sets--vector--chrome-plated--subtle-color-variations--kinuko-y.-craft--dan-matutina--realistic-forms--everyday-life.webp"
                           alt="Image of: Setting up apps and custom integrations"
@@ -910,7 +910,7 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              fetchpriority="low"
+                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"

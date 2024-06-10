@@ -19,7 +19,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-lifestyle">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/d61a6f81-1a45-429f-b69a-ac6b567cfd69.webp"
@@ -42,7 +42,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-inspiration">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/surfer-on-a-pink-background-in-the-style-of-minimalist-sets-vector-chrome-plated-subtle-color-variations-kinuko-y-craft-dan-matutina-realistic-forms-everyday-life-65c038a134d5d-4.webp"
@@ -65,7 +65,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-technology">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/fae9a49c-2b52-4e0e-93fe-e071feb02042.webp"
@@ -88,7 +88,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-travel">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/f524ef6f-944b-464d-ab70-19890cc29a97.webp"
@@ -111,7 +111,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-news">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/9a69a237-3f65-487f-bcb7-994a98d42cda.webp"
@@ -131,7 +131,7 @@ function TrandingTopic() {
                       <div className="image-container">
                         <span className="category-image ctag-music">
                           <img
-                            fetchpriority="low"
+                            
                             decoding="async"
                             loading="lazy"
                             src="/zento-personal/content/images/size/w300h300/2024/02/ebd97452-e5b5-4423-b362-a5f493f80bc1.webp"
