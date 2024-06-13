@@ -1,10 +1,44 @@
+"use client";
 import HeroSection from "@/components/pages/Home/HeroSection";
 import TrandingTopic from "@/components/pages/Home/TrandingTopic";
 import BlogDisplayCard from "@/components/utility/BlogDisplayCard";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [blogs, setBlogs] = useState([]);
   const arr = [1, 1, 1, 1, 1, 1, 1, 1, 1];
-  const categoryClassArr=['ctag-inspiration','ctag-lifestyle','ctag-travel','ctag-technology','ctag-news']
+  const categoryClassArr = [
+    "ctag-inspiration",
+    "ctag-lifestyle",
+    "ctag-travel",
+    "ctag-technology",
+    "ctag-news",
+  ];
+
+  const onGetBLogs = async () => {
+    try {
+      const response = await axios.get("/api/blogs", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.status === 200) {
+        setBlogs(response.data);
+        console.log("Data saved successfully!", response.data);
+      } else {
+        console.error("Error saving data to MongoDB");
+      }
+    } catch (error) {
+      console.error("Error saving data to MongoDB:", error);
+    }
+  };
+
+  useEffect(() => {
+    onGetBLogs();
+  }, []);
+
   return (
     <>
       <main id="home" className="main">
@@ -237,14 +271,15 @@ export default function Home() {
             <div className="center left-content grid-70">
               {/* start: .articles */}
               <div className="articles classic classic-image">
-                {arr.map((data: any) => {
-                  return (
-                    <div>
-                      <BlogDisplayCard />
-                    </div>
-                  );
-                })}
-                <article className="default classic-large bg-box ctag ctag-inspiration  post-access-public">
+                {blogs &&
+                  blogs?.map((data: any) => {
+                    return (
+                      <div>
+                        <BlogDisplayCard data={data} />
+                      </div>
+                    );
+                  })}
+                {/* <article className="default classic-large bg-box ctag ctag-inspiration  post-access-public">
                   <div className="post-format-image epcl-flex">
                     <div className="featured-image">
                       <a
@@ -254,7 +289,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="eager"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                           alt="Image of: Far far away, behind the word mountains"
@@ -341,7 +375,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -385,7 +418,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/af4c0655-3360-41c5-997f-54b03ad540c9.webp"
                           alt="Image of: Building your audience with subscriber signups"
@@ -472,7 +504,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -496,7 +527,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/fae9a49c-2b52-4e0e-93fe-e071feb02042-3.webp"
                           alt="Image of: Customizing your brand and design settings"
@@ -575,7 +605,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/a-woman-in-the-style-of-vibrant-illustrations-florianne-becker-light-violet-and-orange-deconstructed-tailoring-fauvismcore-minimal-65c0389d7f54e-2.webp"
                               alt="Image of: Mary Buzard"
@@ -599,7 +628,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/Canoe--in-the-style-of-psychedelic-manga--rococo-pastel-hues--geometric-shapes---patterns--anime-aesthetic--ornate-embroidery--digital-print--kawaii-aesthetic.webp"
                           alt="Image of: Selling memberships with recurring revenue"
@@ -703,7 +731,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -727,7 +754,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/eaa6617d-6c7b-42a7-826e-d04d3242ff2a-1.webp"
                           alt="Image of: What you need to know about Ghost Editor"
@@ -807,7 +833,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/a-woman-in-the-style-of-vibrant-illustrations-florianne-becker-light-violet-and-orange-deconstructed-tailoring-fauvismcore-minimal-65c0389d7f54e-2.webp"
                               alt="Image of: Mary Buzard"
@@ -831,7 +856,6 @@ export default function Home() {
                         <img
                           className="fullimage cover"
                           loading="lazy"
-                          
                           decoding="async"
                           src="/zento-personal/content/images/size/w660h660/2024/02/Candlelight-on-a-pink-background--in-the-style-of-minimalist-sets--vector--chrome-plated--subtle-color-variations--kinuko-y.-craft--dan-matutina--realistic-forms--everyday-life.webp"
                           alt="Image of: Setting up apps and custom integrations"
@@ -910,7 +934,6 @@ export default function Home() {
                             <img
                               className="author-image cover"
                               loading="lazy"
-                              
                               decoding="async"
                               src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                               alt="Image of: Jonathan Doe"
@@ -923,7 +946,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="clear" />
-                </article>
+                </article> */}
               </div>
               {/* end: .articles */}
               <nav className="epcl-pagination section np-bottom">

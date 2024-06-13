@@ -1,6 +1,6 @@
 import React from "react";
 
-function BlogDisplayCard() {
+function BlogDisplayCard({data}:any) {
   return (
     <>
       <article className="default classic-large bg-box ctag ctag-inspiration  post-access-public">
@@ -63,7 +63,7 @@ function BlogDisplayCard() {
               </div>
               <h2 className="main-title title underline-effect">
                 <a href="/zento-personal/classic/">
-                  Far far away, behind the word mountains
+                {data?.title}
                 </a>
               </h2>
               {/* <a
