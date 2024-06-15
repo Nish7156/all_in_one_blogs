@@ -1,6 +1,7 @@
 "use client";
 import HeroSection from "@/components/pages/Home/HeroSection";
 import TrandingTopic from "@/components/pages/Home/TrandingTopic";
+import { Button } from "@/components/ui/button";
 import BlogDisplayCard from "@/components/utility/BlogDisplayCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
