@@ -58,7 +58,7 @@ function Author() {
           <span className="author-avatar">
             <img
               className="author-image cover"
-              fetchpriority="high"
+              
               decoding="async"
               src="https://ghost.estudiopatagon.com/zento-personal/content/images/2024/02/Rectangle-660-3.jpg"
             />
@@ -302,7 +302,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="eager"
-                    fetchpriority="high"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                     alt="Image of: Far far away, behind the word mountains"
@@ -388,7 +388,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -412,7 +412,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/af4c0655-3360-41c5-997f-54b03ad540c9.webp"
                     alt="Image of: Building your audience with subscriber signups"
@@ -499,7 +499,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -523,7 +523,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/Canoe--in-the-style-of-psychedelic-manga--rococo-pastel-hues--geometric-shapes---patterns--anime-aesthetic--ornate-embroidery--digital-print--kawaii-aesthetic.webp"
                     alt="Image of: Selling memberships with recurring revenue"
@@ -627,7 +627,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -651,7 +651,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/Candlelight-on-a-pink-background--in-the-style-of-minimalist-sets--vector--chrome-plated--subtle-color-variations--kinuko-y.-craft--dan-matutina--realistic-forms--everyday-life.webp"
                     alt="Image of: Setting up apps and custom integrations"
@@ -730,7 +730,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -754,7 +754,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/eaa6617d-6c7b-42a7-826e-d04d3242ff2a.webp"
                     alt="Image of: Writing and managing content in Ghost"
@@ -822,7 +822,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"
@@ -846,7 +846,7 @@ function Author() {
                   <img
                     className="fullimage cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w660h660/2024/02/Man-on-a-pink-background--in-the-style-of-minimalist-sets--vector--chrome-plated--subtle-color-variations--kinuko-y.-craft--dan-matutina--realistic-forms--everyday-life.png"
                     alt="Image of: The spectacle before us was indeed sublime"
@@ -939,7 +939,7 @@ function Author() {
                       <img
                         className="author-image cover"
                         loading="lazy"
-                        fetchpriority="low"
+                        
                         decoding="async"
                         src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                         alt="Image of: Jonathan Doe"

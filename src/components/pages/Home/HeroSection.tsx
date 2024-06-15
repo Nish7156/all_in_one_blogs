@@ -28,7 +28,6 @@ function HeroSection() {
                 type="email"
                 name="email"
                 className="inputbox large"
-                required=""
                 placeholder="Enter your email address"
                 data-members-email=""
               />
@@ -47,7 +46,7 @@ function HeroSection() {
         <div className="right grid-45 tablet-grid-45 mobile-grid-60">
           <img
             src="https://ghost.estudiopatagon.com/zento-personal/content/images/size/w1024h1024/2024/02/Rectangle-660-2.jpg"
-            fetchpriority="high"
+            
             decoding="async"
             alt=""
             className="hero-image fullwidth"

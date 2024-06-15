@@ -1,6 +1,6 @@
 import React from "react";
 
-function BlogDisplayCard() {
+function BlogDisplayCard({data}:any) {
   return (
     <>
       <article className="default classic-large bg-box ctag ctag-inspiration  post-access-public">
@@ -13,7 +13,7 @@ function BlogDisplayCard() {
               <img
                 className="fullimage cover"
                 loading="eager"
-                fetchpriority="high"
+                
                 decoding="async"
                 src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                 alt="Image of: Far far away, behind the word mountains"
@@ -63,7 +63,7 @@ function BlogDisplayCard() {
               </div>
               <h2 className="main-title title underline-effect">
                 <a href="/zento-personal/classic/">
-                  Far far away, behind the word mountains
+                {data?.title}
                 </a>
               </h2>
               {/* <a
@@ -133,7 +133,7 @@ function BlogDisplayCard() {
                   <img
                     className="author-image cover"
                     loading="lazy"
-                    fetchpriority="low"
+                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                     alt="Image of: Jonathan Doe"

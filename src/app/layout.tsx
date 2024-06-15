@@ -48,6 +48,7 @@ export default function RootLayout({
         {children}
         <Footer/>
         </body>
+        
       <script defer src="../assets/dist/scripts.min.js"></script>
       <script defer src="../assets/dist/prism-plugins.min.js"></script>
       <script

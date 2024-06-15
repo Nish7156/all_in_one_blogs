@@ -236,7 +236,7 @@ function page() {
                 width={300}
                 height={380}
                 src="/zento-personal/content/images/size/w660h660/2024/02/af4c0655-3360-41c5-997f-54b03ad540c9.webp"
-                fetchpriority="high"
+                
                 decoding="async"
                 alt="Building your audience with subscriber signups"
               />
@@ -462,7 +462,6 @@ function page() {
                     defaultValue="https://ghost.estudiopatagon.com/zento-personal/vertical/"
                     className="inputbox large"
                     id="copy-link"
-                    readOnly=""
                   />
                   <button
                     className="copy epcl-button submit absolute"
@@ -520,7 +519,7 @@ function page() {
           <div className="category-info epcl-flex">
             <div className="overlay-effect ctag-lifestyle">
               <span
-                href="https://ghost.estudiopatagon.com/zento-personal/tag/lifestyle/"
+               
                 className="image-container category-image ctag-lifestyle"
               >
                 <img src="/zento-personal/content/images/size/w300h300/2024/02/d61a6f81-1a45-429f-b69a-ac6b567cfd69.webp" />
@@ -530,14 +529,14 @@ function page() {
                 <span className="title large">Lifestyle</span>
               </h3>
               <a
-                href="https://ghost.estudiopatagon.com/zento-personal/tag/lifestyle/"
+               
                 className="full-link"
               >
                 <span className="screen-reader-text">Lifestyle</span>
               </a>
             </div>
             <a
-              href="https://ghost.estudiopatagon.com/zento-personal/tag/lifestyle/"
+             
               className="epcl-button ctag ctag-lifestyle hide-on-mobile"
             >
               View All Articles
@@ -560,7 +559,7 @@ function page() {
           </div>
           <div className="clear" />
           <a
-            href="https://ghost.estudiopatagon.com/zento-personal/tag/lifestyle/"
+           
             className="epcl-button ctag ctag-lifestyle hide-on-tablet hide-on-desktop"
           >
             View All Articles
