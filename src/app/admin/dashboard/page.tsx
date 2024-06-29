@@ -1,6 +1,7 @@
 "use client";
 import { onCreateBlog } from "@/app/actions";
 import clientPromise from "@/app/backend/database";
+import { generateSlug } from "@/lib/helper";
 import dynamic from "next/dynamic";
 import React, { useState, useEffect } from "react";
 const QuillEditor = dynamic(
@@ -19,6 +20,7 @@ function DashBoard() {
     category: "",
     image: null,
     excerpt: "",
+    slug: "",
   });
 
   useEffect(() => {
@@ -48,17 +50,24 @@ function DashBoard() {
 
   const handleSubmit = async (e:any) => {
     e.preventDefault();
+
+    const slug = generateSlug(formData.title);
+
+    // Update the formData with the generated slug
+    const updatedFormData = { ...formData, slug };
+  
     try {
       const response = await fetch("/api/create-blog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(updatedFormData),
       });
 
       if (response.ok) {
         console.log("Data saved successfully!");
+        alert('Data saved successfully!')
       } else {
         console.error("Error saving data to MongoDB");
       }

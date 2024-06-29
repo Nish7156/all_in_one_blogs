@@ -1,19 +1,19 @@
+import Link from "next/link";
 import React from "react";
 
-function BlogDisplayCard({data}:any) {
+function BlogDisplayCard({ data }: any) {
   return (
     <>
       <article className="default classic-large bg-box ctag ctag-inspiration  post-access-public">
         <div className="post-format-image epcl-flex">
           <div className="featured-image">
-            <a
-              href="/zento-personal/classic/"
+            <Link
               className="thumb epcl-loader opacity-effect"
+              href={`/blog/${data.slug}`}
             >
               <img
                 className="fullimage cover"
                 loading="eager"
-                
                 decoding="async"
                 src="/zento-personal/content/images/size/w660h660/2024/02/66017f14-c1b4-4033-a177-8615bbfc184a-1.webp"
                 alt="Image of: Far far away, behind the word mountains"
@@ -21,15 +21,16 @@ function BlogDisplayCard({data}:any) {
               <span className="screen-reader-text">
                 Far far away, behind the word mountains
               </span>
-            </a>
+            </Link>
             <div className="tags fill-color absolute">
-              <a
-                href="/zento-personal/tag/inspiration/"
-                className="primary-tag ctag ctag-inspiration"
-                data-id="ctag-inspiration"
-              >
-                Inspiration
-              </a>
+              <Link href={`/blog/${data.slug}`} legacyBehavior>
+                <a
+                  className="primary-tag ctag ctag-inspiration"
+                  data-id="ctag-inspiration"
+                >
+                  Inspiration
+                </a>
+              </Link>
             </div>
           </div>
           <div className="info">
@@ -62,9 +63,7 @@ function BlogDisplayCard({data}:any) {
                 </div>
               </div>
               <h2 className="main-title title underline-effect">
-                <a href="/zento-personal/classic/">
-                {data?.title}
-                </a>
+                <Link href={`/blog/${data.slug}`}>{data?.title}</Link>
               </h2>
               {/* <a
                 href="/zento-personal/customizing-your-brand-and-design-settings/"
@@ -133,7 +132,6 @@ function BlogDisplayCard({data}:any) {
                   <img
                     className="author-image cover"
                     loading="lazy"
-                    
                     decoding="async"
                     src="/zento-personal/content/images/size/w120h120/2024/02/Rectangle-660-3.jpg"
                     alt="Image of: Jonathan Doe"
