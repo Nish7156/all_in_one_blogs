@@ -4,7 +4,7 @@ import React from "react";
 const getBlogBySlug = async (slug: string) => {
   try {
     const response = await axios.get(
-      `http://localhost:3000/api/getBlogBySlug?slug=${slug}`
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/getBlogBySlug?slug=${slug}`
     );
 
     if (response.status === 200) {
