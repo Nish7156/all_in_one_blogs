@@ -1,10 +1,11 @@
+import { checkEnvironment } from "@/lib/checkEnvironment";
 import axios from "axios";
 import React from "react";
 
 const getBlogBySlug = async (slug: string) => {
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/getBlogBySlug?slug=${slug}`
+      `${checkEnvironment()}/api/getBlogBySlug?slug=${slug}`
     );
 
     if (response.status === 200) {
@@ -18,7 +19,6 @@ const getBlogBySlug = async (slug: string) => {
 };
 
 async function SingleBlog({ params }: any) {
-
   const blogData = await getBlogBySlug(params?.slug || "");
 
   return (
